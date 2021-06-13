@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>home</title>
+        <style>
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+
+            div {
+                display: block;
+            }
+
+            p {
+                margin: 0.5rem;
+            }
+
+            .home {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .section {
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                border: 1px solid #dbdbdb;
+                padding: 1rem;
+                margin: 1rem;
+                margin-bottom: 0px;
+            }
+
+            .sectioncontent {
+                border: 1px solid #dbdbdb;
+                border-top: none;
+                padding: 1rem;
+                margin: 1rem;
+                margin-top: 0px;
+                height: 250px;
+            }
+
+            .centre {
+                display: grid;
+                place-content: center;
+            }
+
+            .title {
+                margin: 0px;
+            }
+
+             /* unvisited link */
+            a:link {
+                color: #50f;
+                font-weight: bold;
+                text-decoration: none;
+            }
+
+            /* visited link */
+            a:visited {
+                color: #50f;
+                font-weight: bold;
+                text-decoration: none;
+            }
+
+            /* mouse over link */
+            a:hover {
+                color: #50f;
+                font-weight: bold;
+                text-decoration: none;
+            }
+
+            /* selected link */
+            a:active {
+                color: #50f;
+                font-weight: bold;
+                text-decoration: none;
+            }
+
+            dd {
+                display: block;
+                margin-inline-start: 10px;
+            }
+
+            .about {
+                flex-grow: 2;
+            }
+
+            .sitemap {
+                flex-grow: 2;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="centre">
+            <div class="home">
+                <div class="about">
+                    <div class="section">
+                        <h2 class="title">About</h2>
+                    </div>
+                    <div class="sectioncontent">
+                        <p>this website is a testing website for PoIgon to do random stuff</p>
+                        <p>look to thr right to see my recreations/tests</p>
+                        <p>to see unseen stuff from PoIygon</p>
+                    </div>
+                </div>
+                <div class="sitemap">
+                    <div class="section">
+                        <h2 class="title">Site Map</h2>
+                    </div>
+                    <div class="sectioncontent">
+                        <dl>
+                            <dt>Links</dt>
+                            <dd><a href="https://testwebsite-nine.vercel.app/wikipediaembed/" target="_blank">Wikipedia Embed</a></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
