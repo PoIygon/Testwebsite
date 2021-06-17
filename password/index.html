@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                font-family: Helvetica;
+                background-color: #313131;
+                color: #ff4b2b;
+
+            }
+
+            h1
+            h2
+            h3
+            h4 {
+                font-weight: bold;
+                word-spacing: 2rem;
+            }
+
+            .centre {
+                display: grid;
+                place-content: center;
+            }
+
+            input[type=password],
+            input[type=username] {
+                background-color: #313131;
+                border: none;
+                border-bottom: 2px solid #ff4b2b;
+                animation-timing-function: ease;
+                animation-duration: 1s;
+                margin-bottom: 1.5rem;
+            }
+
+            button {
+                padding: 0.25rem;
+                padding-left: 5rem;
+                padding-right: 5rem;
+                background-color: #313131;
+                border: 2px solid #ff4b2b;
+                color: #ff4b2b;
+                border-radius: 25px;
+            }
+
+            input[type=password]:focus {
+                background-color: #ffffff;
+                animation-timing-function: ease;
+                animation-duration: 1s;
+            }
+
+            form {
+                display: flex;
+                flex-direction: column;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="centre">
+            <h1>  Sign Up Now!  </h1>
+            <form>
+                <label for="password">Username:
+                </label>
+                <input id="password" type="username" title="username" placeholder="enter username stupid" required>
+                <label for="npassword">New Password:
+                </label>
+                <input id="npassword" type="password" title="password" placeholder="enter password stupid" required>
+            </form>
+            <a href="/rickroll/index.html">
+                <button>Sign Up!</button>
+            </a>
+        </div>
+    </body>
+</html>

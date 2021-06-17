@@ -1,3 +1,4 @@
 {
-    "window.title": "(ツ)_/¯ ${dirty}${activeEditorShort}"
+    "window.title": "(ツ)_/¯ ${dirty}${activeEditorShort}",
+    "liveServer.settings.port": 5501
 }
