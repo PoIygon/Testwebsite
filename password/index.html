@@ -22,6 +22,10 @@
                 place-content: center;
             }
 
+            .eeee {
+                margin-top: 25%;
+            }
+
             input[type=password],
             input[type=text] {
                 background-color: #313131;
@@ -31,12 +35,6 @@
                 animation-duration: 1s;
                 margin-bottom: 1.5rem;
                 outline: none;
-            }
-
-            /*Change text in autofill textbox*/
-            input:-webkit-autofill
-            {
-                -webkit-text-fill-color: #313131 !important;
             }
 
             button {
@@ -49,7 +47,7 @@
                 border-radius: 25px;
             }
 
-            input[type=password]:focus {
+            input[type=password]:focus, input[type=text]:focus {
                 background-color: #ffffff;
                 animation-timing-function: ease;
                 animation-duration: 1s;
@@ -63,7 +61,7 @@
     </head>
     <body>
         <div class="centre">
-            <h1>  Sign Up Now!  </h1>
+            <h1 class="eeee">  Sign Up Now!  </h1>
             <form>
                 <label for="password">Username:
                 </label>
