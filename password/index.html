@@ -23,13 +23,20 @@
             }
 
             input[type=password],
-            input[type=username] {
+            input[type=text] {
                 background-color: #313131;
                 border: none;
                 border-bottom: 2px solid #ff4b2b;
                 animation-timing-function: ease;
                 animation-duration: 1s;
                 margin-bottom: 1.5rem;
+                outline: none;
+            }
+
+            /*Change text in autofill textbox*/
+            input:-webkit-autofill
+            {
+                -webkit-text-fill-color: #313131 !important;
             }
 
             button {
@@ -60,7 +67,7 @@
             <form>
                 <label for="password">Username:
                 </label>
-                <input id="password" type="username" title="username" placeholder="enter username stupid" required>
+                <input id="password" type="text" title="username" placeholder="enter username stupid" required>
                 <label for="npassword">New Password:
                 </label>
                 <input id="npassword" type="password" title="password" placeholder="enter password stupid" required>
