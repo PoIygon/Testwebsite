@@ -4,20 +4,32 @@
         <meta charset="UTF-8">
 
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
 
         <title>Scratch - Discuss</title>
         <style>
             :root {
                 --primary: #50f;
                 --darkbackground: #202020;
+                --outline: #606060;
+                --lightgrey: #333333;
+                --darkgrey: #282828;
             }
 
             body {
-                font-family: 'Open Sans', sans-serif;
+                font-family: 'Roboto', sans-serif;
+                color: white;
                 margin: 0px;
                 padding: 0px;
                 background-color: var(--darkbackground);
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
             }
 
             nav {
@@ -45,14 +57,46 @@
                 margin-right: 1.5rem;
             }
 
-            header {
-                
+            .container {
+                padding: 15%;
+                padding-top: 70px;
+            }
+
+            .tophead {
+                display: flex;
+                flex-direction: row;
+            }
+
+            .sectionhead {
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                border: solid var(--outline) 2px;
+            }
+
+            section>.sectionhead {
+                padding: 12.5px;
+            }
+
+            section>.sectionhead>h2 {
+                margin: 0%;
+                margin-left: 10px;
+            }
+
+            section>.sectioncontent {
+                border: solid var(--outline);
+                border-top: none;
+                padding: 20px;
+            }
+
+            section>.sectioncontent>* {
+                margin-top: 0%;
             }
         </style>
     </head>
     <body>
         <nav>
             <ul>
+                <li><a href="/">Scratch</a></li>
                 <li>
                     <a href="#">
                         Create
@@ -63,8 +107,20 @@
                 <li><a href="#">About</a></li>
             </ul>
         </nav>
-        <header>
-
-        </header>
+        <div class="container">
+            <div class="tophead">
+                <section>
+                    <div class="sectionhead">
+                        <h2>lorem hhhh</h2>
+                    </div>
+                    <div class="sectioncontent">
+                        <p>eeeeeeeeee</p>
+                        <p>eeeeeeeeee</p>
+                        <p>eeeeeeeeee</p>
+                        <p>eeeeeeeeee</p>
+                    </div>
+                </section>
+            </div>
+        </div>
     </body>
 </html>
