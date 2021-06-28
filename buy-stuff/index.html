@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://scratch.mit.edu/images/welcome-learn.png" type="image/x-icon">
+    <title>buy stuff from me</title>
+    <style>
+        :root {
+            --black: #313131;
+            --red: #ff4040;
+        }
+
+        body {
+            background-color: var(--black);
+            color: white;
+            font-family: Comic Sans MS;
+        }
+
+        img.pic {
+            margin-bottom: 1em;
+            border-radius: 2em 2em 0em 0em;
+            border: 2px solid var(--red);
+        }
+
+        .wrapper {
+            margin: 0 auto;
+            width: 500px;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: row;
+            gap: 1em;
+            margin: 0 0 1em 0;
+        }
+
+        .content>.linebreak {
+            height: 100;
+            width: 0px;
+            border: 1.5px solid var(--red);
+            content: '';
+        }
+
+        .content>.e {
+            flex-grow: 1;
+            border: 2px solid var(--red);
+            border-left: none;
+            border-right: none;
+            padding: 0.5em;
+            margin: 1em 0em;
+        }
+
+        .content>.e>* {
+            margin: 0px;
+        }
+
+        button {
+            padding: 1em 2em;
+            width: 100%;
+            background-color: var(--black);
+            border: 2px solid var(--red);
+            border-right: none;
+            border-left: none;
+            color: white;
+            font-family: Comic Sans MS;
+            font-size: 1.25em;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <img src="https://scratch.mit.edu/images/welcome-learn.png" alt="" class="pic" height="172px" width="100%">
+        <div class="content">
+            <div class="e">
+                <h2>Description</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto repellendus amet dolorum quae aut quidem consequatur asperiores possimus pariatur eveniet!</p>
+            </div>
+            <div class="linebreak"></div>
+            <div class="e">
+                <h2>Prices</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt esse distinctio odio sapiente ea fuga voluptatem placeat a quidem! Nesciunt.</p>
+            </div>
+        </div>
+        <button>buy now!</button>
+    </div>
+</body>
+</html>
