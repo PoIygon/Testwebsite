@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/logo - Copy.png" type="image/png">
+    <title>javascript stuff</title>
+</head>
+<body>
+    <p id="text">this button changes my text</p>
+    <button onclick='document.getElementById("text").innerHTML = "height";'>click me</button>
+
+    <p>apparently images change when you click these buttons</p>
+    <button onclick="document.getElementById('myImage').src='/google.png'">google</button>
+
+<img id="myImage" src="/logo - Copy.png" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='/logo - Copy.png'">Tangrin</button>
+<P id="fontsize">changes my font-size</P>
+<button onclick="document.getElementById('fontsize').style.fontSize = '15rem';">change</button>
+<button onclick="document.getElementById('fontsize').style.fontSize = '1rem';">go back</button>
+<p id="invi">click button to make me go invisible and uninvisible</p>
+<br>
+<button onclick="document.getElementById('invi').style.display = 'none';">invisible</button>
+<button onclick="document.getElementById('invi').style.display = 'block';">show</button>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YAY</title>
+    <link rel="shortcut icon" href="/logo - Copy.png" type="image/png">
+    <style>
+        :root {
+            --background: #313131;
+            --red: #ff4040;
+        }
+
+        body {
+            font-family: helvetica;
+        }
+
+        #color {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+<!--    add JS dynamically here      -->
+        <script>
+            const wrapper = document.querySelector('.wrapper');
+
+            function createContent(data) {
+            const content = `
+                <div id="color">
+                <span id="name">${data.name}</span>
+                    /
+                <span id="status">${data.status} </span>
+                </div>
+            `;
+            wrapper.insertAdjacentHTML('beforeend', content);
+            }
+
+            document.getElementById('color').style.backgroundColor = ${data.color};
+
+            fetch('https://my-ocular.jeffalo.net/api/user/PoIygon')
+            .then(response => response.json())
+            .then(data => createContent(data))
+            .catch((error) => console.log(error));
+        </script>
+    </div>
+</body>
+</html>
