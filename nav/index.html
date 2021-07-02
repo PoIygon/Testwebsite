@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar cool</title>
+    <link rel="shortcut icon" href="/logo - Copy.png" type="image/png">
+    <style>
+        :root {
+            --background: #313131;
+            --red: #ff4040;
+        }
+
+        body {
+            background-color: var(--background);
+            color: white;
+            font-family: helvetica;
+            margin: 0;
+        }
+
+        nav {
+            background-color: var(--red);
+            position: sticky;
+        }
+
+        nav>ul {
+            display: flex;
+            list-style-type: none;
+            width: 800px;
+            margin: 0 auto;
+            padding: 0;
+            flex-direction: row;
+        }
+
+        nav>ul>li {
+            margin: 1em 1.5em;
+        }
+
+        nav>ul>li>a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="http://example.com">example</a></li>
+            <li><a href="http://example.com">example</a></li>
+            <li><a href="http://example.com">example</a></li>
+            <li><a href="http://example.com">example</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
