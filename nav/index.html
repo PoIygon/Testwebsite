@@ -14,44 +14,155 @@
 
         body {
             background-color: var(--background);
-            color: white;
             font-family: helvetica;
             margin: 0;
         }
 
-        nav {
+        nav, footer {
             background-color: var(--red);
-            position: sticky;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            right: 0;
+            left: 0;
         }
 
         nav>ul {
             display: flex;
             list-style-type: none;
-            width: 800px;
-            margin: 0 auto;
-            padding: 0;
             flex-direction: row;
+            flex-grow: 1;
         }
 
         nav>ul>li {
             margin: 1em 1.5em;
         }
 
-        nav>ul>li>a {
-            color: white;
+        nav>ul>li:nth-of-type(4) {
+            margin-right: auto;
+        }
+
+        nav>ul>li>a, footer a {
             text-decoration: none;
             font-weight: bold;
+            /*transition-property: color;
+            transition-duration: 0.25s;
+            transition-timing-function: linear;
+            transition-delay: 0s;*/
+            transition: color 0.25s ease 0s;
+        }
+
+        nav>ul>li>a:hover {
+            color: transparent;
+        }
+
+        nav>ul>li>a, body, footer a {
+            color: white;
+        }
+
+        nav>ul, .wrapper {
+            width: 800px;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        .wrapper {
+            margin-top: 75px;
+        }
+
+        .right, footer>.wrapper {
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            flex-wrap: nowrap;
+            justify-content: space-between;
+        }
+
+        dd {
+            margin: 0px;
+        }
+
+        .down {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+        }
+
+        h1, h2, h3, h4, h5 {
+            margin: 0.25em 0;
+        }
+
+        footer dt {
+            margin-bottom: 0.5em;
         }
     </style>
 </head>
 <body>
     <nav>
         <ul>
-            <li><a href="http://example.com">example</a></li>
-            <li><a href="http://example.com">example</a></li>
-            <li><a href="http://example.com">example</a></li>
-            <li><a href="http://example.com">example</a></li>
+            <li><a href="http://example.com">Home</a></li>
+            <li><a href="http://example.com">Blog</a></li>
+            <li><a href="http://example.com">About</a></li>
+            <li><a href="http://example.com">Contact</a></li>
+            <li><a href="http://example.com">Login</a></li>
+            <li><a href="http://example.com">Sign Up</a></li>
         </ul>
     </nav>
+    <div class="wrapper">
+        <div class="right">
+            <div class="down">
+                <h1>PoIygon</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, perferendis quis. Ipsa, deleniti saepe. Soluta voluptatum at ducimus aliquam, eveniet facere sit molestiae fugit temporibus animi hic, molestias porro atque!</p>
+                <p>Ad autem voluptatum exercitationem molestias facere, dicta beatae asperiores accusamus ex alias labore, animi architecto nemo enim consectetur aspernatur est corporis nobis eos consequatur soluta recusandae quo doloribus assumenda? Architecto?</p>
+                <p>Error sequi, voluptas nobis sunt qui nam eligendi non atque voluptatem eum ipsa dicta iure similique excepturi, quibusdam sapiente, vel explicabo nostrum aliquam perspiciatis et. Cumque laudantium debitis unde consectetur.</p>
+                <p>Architecto quas debitis placeat repudiandae deserunt delectus, modi laboriosam in, adipisci ducimus ratione, libero assumenda at sunt quisquam! Sint exercitationem ratione recusandae, quis ipsa quia placeat architecto iure laborum numquam!</p>
+                <p>Deleniti maiores atque, pariatur enim magni placeat. Odit exercitationem, consectetur praesentium ducimus eos explicabo. Debitis, autem provident atque voluptatem culpa qui veniam, distinctio quisquam, voluptatibus dicta amet perferendis voluptate reiciendis.</p>
+                <p>Id, quos perferendis itaque iusto odit, repellat, quia ex esse quo repellendus neque sed autem numquam corporis voluptates nisi adipisci dolorum doloribus? Dolore ea, quia at sequi ex cumque iusto.</p>
+                <p>Esse culpa doloremque minima blanditiis, ipsum omnis, magnam facere incidunt molestiae accusantium ratione nobis dicta sint doloribus, aspernatur deserunt delectus eius deleniti cupiditate laboriosam dolorem molestias numquam vitae. Porro, quis.</p>
+                <p>Adipisci obcaecati delectus beatae dignissimos ea voluptatum repudiandae culpa quaerat expedita quis voluptatibus sit officiis veniam nemo, inventore odit? Asperiores aliquid, aliquam suscipit ipsam magni esse rem fugiat explicabo fuga.</p>
+                <p>Quos qui dolor, dolores veniam soluta atque illo provident at itaque beatae impedit! Et quaerat exercitationem iure natus veritatis minima atque magni! Quis inventore sapiente repellendus assumenda facere corporis laboriosam.</p>
+                <p>Temporibus cupiditate fugit dignissimos doloribus dolore officiis, perspiciatis deleniti laudantium asperiores quis impedit repudiandae amet maxime molestias velit eveniet repellat magnam? Distinctio id facere quaerat, ea nulla iusto vitae sapiente!</p>
+            </div>
+            <div class="down">
+                <img src="https://u.cubeupload.com/Polygon/oUi8Ma.png" alt="pog" width="250" height="250">
+                <h3>Information</h3>
+                <p>eyes replaced with mouths</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="wrapper">
+            <dl>
+                <dt>example</dt>
+                <dd><a href="http://">example</a></dd>
+                <dd><a href="http://">example</a></dd>
+                <dd><a href="http://">example</a></dd>
+                <dd><a href="http://">example</a></dd>
+            </dl>
+            <dl>
+                <dt>example</dt>
+                <dd><a href="http://">example</a></dd>
+                <dd><a href="http://">example</a></dd>
+                <dd><a href="http://">example</a></dd>
+                <dd><a href="http://">example</a></dd>
+            </dl>
+            <dl>
+                <dt>example</dt>
+                <dd><a href="http://">example</a></dd>
+                <dd><a href="http://">example</a></dd>
+                <dd><a href="http://">example</a></dd>
+                <dd><a href="http://">example</a></dd>
+            </dl>
+            <dl>
+                <dt>example</dt>
+                <dd><a href="http://">example</a></dd>
+                <dd><a href="http://">example</a></dd>
+                <dd><a href="http://">example</a></dd>
+                <dd><a href="http://">example</a></dd>
+            </dl>
+        </div>
+    </footer>
 </body>
 </html>
