@@ -1,0 +1,11 @@
+:root {
+    --background: #313131;
+    --red: #ff4040;
+}
+
+body {
+    background-color: var(--background);
+    font-family: helvetica;
+    color: white;
+    margin: 0;
+}
