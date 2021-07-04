@@ -1,23 +1,34 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>non static page time</title>
-    <link rel="shortcut icon" href="/logo - Copy.png" type="image/png">
+    <title>testing fetch and display</title>
     <link rel="stylesheet" href="/style.css">
-    <script src="/userinfo/fetch.js"></script>
+    <link rel="shortcut icon" href="/logo - Copy.png" type="image/png">
+    <style>
+        .right {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .down {
+            display: flex;
+            flex-direction: column;
+        }
+
+        img {
+            margin: 1em;
+            border-radius: 50%;
+        }
+    </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/password/">Login</a></li>
-            <li><a href="/Signup/">Sign Up</a></li>
-        </ul>
-    </nav>
     <div class="wrapper">
-        
+        <div id="myData">
+            <script src="fetch.js"></script>
+        </div>
     </div>
 </body>
 </html>
