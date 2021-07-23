@@ -1,4 +1,4 @@
-const wrapper = document.querySelector('#myData');
+const wrapper = document.querySelector('body');
     
 function createContent(data) {
 const content = `

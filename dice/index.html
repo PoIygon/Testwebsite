@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dice</title>
+    <link rel="shortcut icon" href="/logo - Copy.png" type="image/png">
+    <link rel="stylesheet" href="/style.css">
+    <style>
+        body {
+            text-align: center;
+            color: var(--red);
+        }
+
+        #dice {
+            font-size: 5rem;
+        }
+
+        button, input[type="button"] {
+            border: var(--red) 2px solid;
+            border-radius: 10000rem;
+            background-color: var(--background);
+            color: var(--red);
+            padding: 1em 2em;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .wrapper {
+            margin: auto;
+            margin-top: 2em;
+            max-width: 50%;
+            padding: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1 id="dice"></h1>
+        <label for="min">minimum:</label>
+        <input type="text" name="min" id="min" placeholder="0">
+        <br>
+        <label for="max">maximum:</label>
+        <input type="text" name="max" id="max" placeholder="100">
+        <br>
+        <button onclick="generate()" style="margin: 2em;">Generate</button>
+        <script src="/dice/index.js"></script>
+    </div>
+</body>
+</html>
